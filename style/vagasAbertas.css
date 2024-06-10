@@ -1,61 +1,150 @@
-.container__vagasAbertas{
+.container__vagasAbertas {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-
-.container__vagasAbertas-detalhes{
+  }
+  
+  .container__vagasAbertas-detalhes {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin: 6em 0;
-}
-
-.container__vagasAbertas-texto{
+  }
+  
+  .container__vagasAbertas-texto {
     font-size: 14px;
     font-weight: 500;
     color: var(--vermelho);
     background-color: var(--vermelho-claro);
     border-radius: 24px;
     padding: 1em 0.5em;
-}
-
-.container__titulo-detalhes-vagasAbertas{
+  }
+  
+  .container__titulo-detalhes-vagasAbertas {
     font-size: 36px;
     font-weight: 600;
     color: var(--preto);
     margin: 1em 0;
-}
-
-.container__texto-detalhes-vagasAbertas{
+  }
+  
+  .container__texto-detalhes-vagasAbertas {
     font-size: 20px;
     color: var(--cinza-claro);
     margin-bottom: 4em;
-}
-
-.vagas__container{
+  }
+  
+  .vagas__container {
     border: 1px solid var(--cinza-claro);
     border-radius: 14px;
     padding: 1em 30em 1em 1em;
     margin: 1em 0 1em 0;
-}
-
-.vagas__titulo{
+  }
+  
+  .vagas__titulo {
     font-size: 20px;
     font-weight: 500;
     margin-top: 3em;
-}
-
-.vagas__subtitulo{
+  }
+  
+  .vagas__subtitulo {
     font-size: 18px;
     font-weight: 500;
     padding: 1em 0 2em 0;
-}
-
-.vagas__texto{
+  }
+  
+  .vagas__texto {
     font-weight: 500;
     color: var(--cinza-claro);
     padding: 1em 0;
+  }
+
+  .img{
+    width: 100%;
+  }
+  
+  /* Media queries para telas menores */
+  @media (max-width: 768px) {
+   .container__vagasAbertas-detalhes {
+      margin: 4em 0; /* ajustar margem em telas menores */
+    }
+   .container__vagasAbertas-texto {
+      font-size: 12px; /* reduzir tamanho do texto em telas menores */
+      padding: 0.5em 0.3em; /* ajustar padding em telas menores */
+    }
+   .container__titulo-detalhes-vagasAbertas {
+      font-size: 24px; /* reduzir tamanho do título em telas menores */
+    }
+   .container__texto-detalhes-vagasAbertas {
+      font-size: 16px; /* reduzir tamanho do texto em telas menores */
+      margin-bottom: 2em; /* ajustar margem em telas menores */
+    }
+   .vagas__container {
+      padding: 1em 20em 1em 1em; /* ajustar padding em telas menores */
+      margin: 0.5em 0 0.5em 0; /* ajustar margem em telas menores */
+    }
+   .vagas__titulo {
+      font-size: 16px; /* reduzir tamanho do título em telas menores */
+      margin-top: 2em; /* ajustar margem em telas menores */
+    }
+   .vagas__subtitulo {
+      font-size: 14px; /* reduzir tamanho do subtítulo em telas menores */
+      padding: 0.5em 0 1em 0; /* ajustar padding em telas menores */
+    }
+   .vagas__texto {
+      font-size: 14px; /* reduzir tamanho do texto em telas menores */
+      padding: 0.5em 0; /* ajustar padding em telas menores */
+    }
+  }
+  
+  @media (max-width: 480px) {
+   .container__vagasAbertas-detalhes {
+      margin: 2em 0; /* ajustar margem em telas muito menores */
+    }
+   .container__vagasAbertas-texto {
+      font-size: 10px; /* reduzir tamanho do texto em telas muito menores */
+      padding: 0.3em 0.2em; /* ajustar padding em telas muito menores */
+    }
+   .container__titulo-detalhes-vagasAbertas {
+      font-size: 18px; /* reduzir tamanho do título em telas muito menores */
+    }
+   .container__texto-detalhes-vagasAbertas {
+      font-size: 12px; /* reduzir tamanho do texto em telas muito menores */
+      margin-bottom: 1em; /* ajustar margem em telas muito menores */
+    }
+}  
+
+/* Media query para telas de tamanho 375px */
+@media (max-width: 375px) {
+  .container__vagasAbertas-detalhes {
+      margin: 1em 0; /* ajustar margem em telas muito menores */
+  }
+  .container__vagasAbertas-texto {
+      font-size: 10px; /* reduzir tamanho do texto em telas muito menores */
+      padding: 0.3em 0.2em; /* ajustar padding em telas muito menores */
+  }
+  .container__titulo-detalhes-vagasAbertas {
+      font-size: 16px; /* reduzir tamanho do título em telas muito menores */
+  }
+  .container__texto-detalhes-vagasAbertas {
+      font-size: 10px; /* reduzir tamanho do texto em telas muito menores */
+      margin-bottom: 0.5em; /* ajustar margem em telas muito menores */
+  }
+  .vagas__container {
+      padding: 0.5em 15em 0.5em 0.5em; /* ajustar padding em telas muito menores */
+      margin: 0.3em 0 0.3em 0; /* ajustar margem em telas muito menores */
+  }
+  .vagas__titulo {
+      font-size: 14px; /* reduzir tamanho do título em telas muito menores */
+      margin-top: 1em; /* ajustar margem em telas muito menores */
+  }
+  .vagas__subtitulo {
+      font-size: 12px; /* reduzir tamanho do subtítulo em telas muito menores */
+      padding: 0.3em 0 0.5em 0; /* ajustar padding em telas muito menores */
+  }
+  .vagas__texto {
+      font-size: 10px; /* reduzir tamanho do texto em telas muito menores */
+      padding: 0.3em 0; /* ajustar padding em telas muito menores */
+  }
 }

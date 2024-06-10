@@ -1,40 +1,104 @@
-.cabecalho{
+.cabecalho {
     display: flex;
     justify-content: space-around;
     align-items: center;
     padding: 2em 0;
-}
-
-.container__logo{
+  }
+  
+  .container__logo {
     display: flex;
     align-items: center;
-}
-
-.container__titulo{
+  }
+  
+  .container__titulo {
     font-size: 18px;
     font-weight: 500;
     padding: 0 1em;
     margin-right: 10em;
-}
-
-.container__lista{
+  }
+  
+  .container__lista {
     display: flex;
-}
-
-.container__item{
+    flex-wrap: wrap; /* adicionado para quebra de linha em telas menores */
+  }
+  
+  .container__item {
     padding: 0 1.5em;
-}
-
-.container__link{
+  }
+  
+  .container__link {
     text-decoration: none;
     font-weight: 500;
     color: var(--cinza-claro);
-}
-
-.container__link--botao{
+  }
+  
+  .container__link--botao {
     background: var(--vermelho);
     padding: 1em 1.5em;
     border-radius: 10px;
     color: var(--branco-principal);
-}
+  }
 
+  .menu-icone {
+    display: none;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 24px;
+    color: var(--cinza-escuro);
+    cursor: pointer;
+  }
+  
+  
+  @media (max-width: 768px) {
+    .container__lista {
+      display: none; /* Esconder o menu em telas menores */
+    }
+  
+    .menu-icone {
+      display: block; /* Mostrar o ícone em telas menores */
+    }
+  }
+  
+
+  /* Media queries para telas menores */
+  @media (max-width: 768px) {
+   .cabecalho {
+      flex-direction: column; /* mudar para layout vertical em telas menores */
+      align-items: center;
+    }
+   .container__titulo {
+      margin-right: 0; /* remover margem direita em telas menores */
+    }
+   .container__lista {
+      flex-direction: column; /* mudar para layout vertical em telas menores */
+    }
+   .container__item {
+      padding: 1em 0; /* ajustar padding em telas menores */
+    }
+   .container__link--botao {
+      padding: 0.5em 1em; /* ajustar padding em telas menores */
+    }
+  }
+  
+  @media (max-width: 480px) {
+   .container__titulo {
+      font-size: 16px; /* reduzir tamanho do título em telas muito menores */
+    }
+   .container__link {
+      font-size: 14px; /* reduzir tamanho do link em telas muito menores */
+    }
+  }
+
+  /* Media query para telas de tamanho 375px */
+@media (max-width: 375px) {
+  .container__titulo {
+      font-size: 14px; /* reduzir ainda mais o tamanho do título */
+  }
+  .container__link {
+      font-size: 12px; /* reduzir ainda mais o tamanho do link */
+  }
+  .menu-icone {
+      font-size: 20px; /* reduzir o tamanho do ícone do menu */
+  }
+}

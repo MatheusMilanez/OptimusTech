@@ -1,46 +1,113 @@
-.container__footer{
+.container__footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background: var(--cinza-muito-claro);
     margin-top: 5em;
-}
-
-.container__footer-titulo{
+  }
+  
+  .container__footer-titulo {
     font-size: 36px;
     font-weight: 600;
     margin: 3em 0 1em 0;
-}
-
-.container__footer-texto{
+  }
+  
+  .container__footer-texto {
     font-size: 20px;
     color: var(--cinza-claro);
     margin-bottom: 2em;
-}
-
-.footer__input{
+  }
+  
+  .footer__input {
     padding: 1em 5em;
     border-radius: 8px;
     border: 1px solid #D0D5DD;
     margin-right: 1em;
-}
-
-.container__footer::placeholder{
+  }
+  
+  .container__footer::placeholder {
     font-family: var(--font-principal);
     color: var(--cinza-claro);
     font-size: 16px;
-
-}
-
-.footer__botao{
+  }
+  
+  .footer__botao {
     background: var(--vermelho);
     color: var(--branco-principal);
     padding: 12px 20px;
     border-radius: 8px;
-}
-
-.footer__direitosReservados{
+  }
+  
+  .footer__direitosReservados {
     color: var(--cinza-claro);
     margin: 2em 0 5em 0;
+  }
+  
+  /* Media queries para telas menores */
+  @media (max-width: 768px) {
+   .container__footer {
+      margin-top: 3em; /* reduzir margem em telas menores */
+    }
+   .container__footer-titulo {
+      font-size: 24px; /* reduzir tamanho do título em telas menores */
+      margin: 2em 0 1em 0; /* ajustar margem em telas menores */
+    }
+   .container__footer-texto {
+      font-size: 16px; /* reduzir tamanho do texto em telas menores */
+      margin-bottom: 1em; /* ajustar margem em telas menores */
+    }
+   .footer__input {
+      padding: 0.5em 3em; /* ajustar padding em telas menores */
+      margin-right: 0.5em; /* ajustar margem em telas menores */
+    }
+   .footer__botao {
+      padding: 8px 15px; /* ajustar padding em telas menores */
+    }
+   .footer__direitosReservados {
+      margin: 1em 0 3em 0; /* ajustar margem em telas menores */
+    }
+  }
+  
+  @media (max-width: 480px) {
+   .container__footer {
+      margin-top: 2em; /* reduzir margem em telas muito menores */
+    }
+   .container__footer-titulo {
+      font-size: 18px; /* reduzir tamanho do título em telas muito menores */
+    }
+   .container__footer-texto {
+      font-size: 14px; /* reduzir tamanho do texto em telas muito menores */
+    }
+   .footer__input {
+      padding: 0.3em 2em; /* ajustar padding em telas muito menores */
+    }
+   .footer__botao {
+      padding: 6px 12px; /* ajustar padding em telas muito menores */
+    }
+  }
+
+  /* Media query para telas de tamanho 375px */
+@media (max-width: 375px) {
+  .container__footer {
+      margin-top: 1.5em; /* reduzir margem em telas muito menores */
+  }
+  .container__footer-titulo {
+      font-size: 16px; /* reduzir tamanho do título em telas muito menores */
+      margin: 1.5em 0 0.5em 0; /* ajustar margem em telas muito menores */
+  }
+  .container__footer-texto {
+      font-size: 12px; /* reduzir tamanho do texto em telas muito menores */
+      margin-bottom: 0.5em; /* ajustar margem em telas muito menores */
+  }
+  .footer__input {
+      padding: 0.3em 1.5em; /* ajustar padding em telas muito menores */
+      margin-right: 0.3em; /* ajustar margem em telas muito menores */
+  }
+  .footer__botao {
+      padding: 4px 8px; /* ajustar padding em telas muito menores */
+  }
+  .footer__direitosReservados {
+      margin: 0.5em 0 1.5em 0; /* ajustar margem em telas muito menores */
+  }
 }

@@ -1,37 +1,83 @@
-.container__colaboradores-section{
+.container__colaboradores-section {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin: 4em 0;
-}
-
-.container__colaboradores{
+  }
+  
+  .container__colaboradores {
     text-align: center;
     background: var(--vermelho-claro);
     width: 60%;
     padding: 2em 2em;
-}
-
-.colaboradoes__texto{
+  }
+  
+  .colaboradoes__texto {
     font-size: 14px;
     font-weight: 600;
     color: var(--vermelho-escuro);
     margin: 3em 0 1em 0;
-}
-
-.colaboradores__titulo{
+  }
+  
+  .colaboradores__titulo {
     font-size: 36px;
     font-weight: 500;
     margin-bottom: 1em;
-}
-
-.colaboradores__nome{
+  }
+  
+  .colaboradores__nome {
     font-weight: 500;
     margin: 1em 0;
-}
-
-.colaboradores__setor{
+  }
+  
+  .colaboradores__setor {
     font-size: 14px;
     color: var(--cinza-claro);
+  }
+  
+ /* Media queries para telas menores */
+@media (max-width: 768px) {
+  .container__colaboradores {
+      width: 80%; /* aumentar largura em telas menores */
+      padding: 1.5em 1em; /* ajustar padding em telas menores */
+  }
+  .colaboradoes__texto {
+      font-size: 12px; /* reduzir tamanho do texto em telas menores */
+      margin: 2em 0 1em 0; /* ajustar margem em telas menores */
+  }
+  .colaboradores__titulo {
+      font-size: 24px; /* reduzir tamanho do título em telas menores */
+      margin-bottom: 0.5em; /* ajustar margem em telas menores */
+  }
+  .colaboradores__nome {
+      margin: 0.5em 0; /* ajustar margem em telas menores */
+  }
+}
+
+@media (max-width: 480px) {
+  .container__colaboradores {
+      width: 90%; /* aumentar largura em telas muito menores */
+      padding: 1em 0.5em; /* ajustar padding em telas muito menores */
+  }
+  .colaboradoes__texto {
+      font-size: 10px; /* reduzir tamanho do texto em telas muito menores */
+  }
+  .colaboradores__titulo {
+      font-size: 18px; /* reduzir tamanho do título em telas muito menores */
+  }
+}
+
+/* Media query para telas de tamanho 375px */
+@media (max-width: 375px) {
+  .container__colaboradores {
+      width: 95%; /* aumentar largura em telas muito menores */
+      padding: 1em; /* ajustar padding em telas muito menores */
+  }
+  .colaboradoes__texto {
+      font-size: 9px; /* reduzir tamanho do texto em telas muito menores */
+  }
+  .colaboradores__titulo {
+      font-size: 16px; /* reduzir tamanho do título em telas muito menores */
+  }
 }

@@ -11,37 +11,31 @@
    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
     <header class="cabecalho">
         <div class="container__logo">
-            <img src="./img/worldwide 1 (Traced).svg" alt="Logo da OptimusTech">
-            <h1 class="container__titulo">OptimusTech</h1>    
-        <ul class="container__lista">
-            <li class="container__item">
-                <a href="#" class="container__link">Home</a>
-            </li>
-            <li class="container__item">
-                <a href="#" class="container__link">Produtos</a>
-            </li>
-            <li class="container__item">
-                <a href="#" class="container__link">Recursos</a>
-            </li>
-            <li class="container__item">
-                <a href="#" class="container__link">Sobre nós</a>
-            </li>
-        </ul>
+          <img src="./img/worldwide 1 (Traced).svg" alt="Logo da OptimusTech">
+          <h1 class="container__titulo">OptimusTech</h1>
         </div>
-
+        <span class="menu-icone">
+          </span>
         <ul class="container__lista">
             <li class="container__item">
-                <a href="#" class="container__link">Entrar</a>
+                <a href="#sobreNos" class="container__link">Sobre nós</a>
             </li>
             <li class="container__item">
-                <a href="#" class="container__link container__link--botao">Cadastrar</a>
+                <a href="#produtos" class="container__link">Produtos</a>
+            </li>
+            <li class="container__item">
+                <a href="#vagas" class="container__link">Vagas abertas</a>
+            </li>
+            <li class="container__item">
+                <a href="#colaboradores" class="container__link">Colaboradores</a>
             </li>
         </ul>
-    </header>
+      </header>
 
-    <section class="container__sobreNós">
+    <section id="sobreNos" class="container__sobreNós">
         <div class="sobreNós-container">
             <p class="container__texto-sobreNós">Sobre nós</p>
             <h2 class="container__titulo-sobreNós">Por que somos diferentes?</h2>
@@ -49,41 +43,19 @@
         </div>    
     </section>
 
-    <section class="container__sobreNós">
-        <div class="container__sobreNós-detalhes">
-            <h3 class="container__valor">400+</h3>
-            <p class="container__titulo-detalhes">Projetos concluídos</p>
-            <p class="container__texto-detalhes">Nós ajudamos a construir mais de 400 projetos incríveis.</p>
-        </div>
-
-        <div class="container__sobreNós-detalhes">
-            <h3 class="container__valor">100+</h3>
-            <p class="container__titulo-detalhes">Colaboradores</p>
-            <p class="container__texto-detalhes">Temos mais de 100 colaboradores no nosso time que se preocupam com nossos clientes.</p>
-        </div>
-
-        <div class="container__sobreNós-detalhes">
-            <h3 class="container__valor">20k</h3>
-            <p class="container__titulo-detalhes">Downloads</p>
-            <p class="container__texto-detalhes">Nossos projetos que estão disponíveis em lojas já foram baixados mais de 20.000 vezes.</p>
-        </div>
-
-        <div class="container__sobreNós-detalhes">
-            <h3 class="container__valor">500+</h3>
-            <p class="container__titulo-detalhes">Reviews 5 estrelas</p>
-            <p class="container__texto-detalhes">Estamos orgulhosos de contar com mais de 500 reviews 5 estrelas em nossos produtos.</p>
-        </div>
-
-        
+    <section id="produtos" class="container__sobreNós">
+        <div class="sobreNós-container">
+            <h2 class="container__titulo-sobreNós">Produtos</h2>
+            <p class="container__texto">Produtos inovadores para impulsionar o crescimento das empresas. Focamos nos detalhes para entregar soluções personalizadas.</p>
+        </div>    
     </section>
 
-    <section class="container__vagasAbertas">
-       
+    <section id="vagas" class="container__vagasAbertas">
         <div class="container__vagasAbertas-detalhes">
             <h3 class="container__vagasAbertas-texto">Vagas abertas!</h3>
             <p class="container__titulo-detalhes-vagasAbertas">Estamos procurando por talentos</p>
             <p class="container__texto-detalhes-vagasAbertas">Somos uma equipe 100% remota com pessoas do Brasil inteiro.</p>
-            <img src="./img/Image.svg" alt="Imagem com pessoas em um escritório">
+            <img src="./img/Image.svg" alt="Imagem com pessoas em um escritório" class="img">
         </div>
 
         <div class="container__vagas">
@@ -116,11 +88,9 @@
                 <p class="vagas__texto">Full-time       Faixa salarial: R$8.000</p>
             </div>
         </div>
-
-
     </section>
 
-    <section class="container__colaboradores-section">
+    <section id="colaboradores" class="container__colaboradores-section">
         <div class="container__colaboradores">
             <p class="colaboradoes__texto">Veja o que nossos colaboradores falam sobre nós</p>
             <h2 class="colaboradores__titulo">OptimusTech se importa com a saúde dos seus colaboradores e sempre procura nos dar todo tipo de auxílio possível.</h2>
@@ -139,5 +109,31 @@
         </div>
         <p class="footer__direitosReservados">© 2022 OptimusTech. Todos os direitos reservados.</p>
     </footer>
+
+    <script>
+        // JavaScript para rolagem suave ao clicar nos links do menu
+        document.addEventListener("DOMContentLoaded", function() {
+            const linksMenu = document.querySelectorAll('.container__link');
+    
+            linksMenu.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+    
+                    const targetId = this.getAttribute('href').substring(1);
+                    const targetSection = document.getElementById(targetId);
+    
+                    if (targetSection) {
+                        const offsetTop = targetSection.offsetTop;
+                        window.scrollTo({
+                            top: offsetTop,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+        });
+    </script>
+    
+
 </body>
 </html>

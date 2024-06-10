@@ -1,50 +1,124 @@
-.container__sobreNós{
+.container__sobreNós {
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-.sobreNós-container{
+  }
+  
+  .sobreNós-container {
     width: 50%;
     text-align: center;
     padding: 4em 0;
- }
-.container__texto-sobreNós{
+  }
+  
+  .container__texto-sobreNós {
     font-weight: 600;
     color: var(--vermelho);
-}
-
-.container__titulo-sobreNós{
+  }
+  
+  .container__titulo-sobreNós {
     font-size: 48px;
     font-weight: 600;
     padding: 1em 0;
-}
-
-.container__texto{
+  }
+  
+  .container__texto {
     font-size: 20px;
     color: var(--cinza-claro);
     flex-wrap: wrap;
-}
-
-.container__sobreNós-detalhes{
+  }
+  
+  .container__sobreNós-detalhes {
     width: 280px;
     padding: 2em 2em;
     margin: 2em 0;
-}
-
-.container__valor{
+  }
+  
+  .container__valor {
     font-size: 60px;
     font-weight: 600;
     color: var(--vermelho);
-}
-
-.container__titulo-detalhes{
+  }
+  
+  .container__titulo-detalhes {
     font-size: 18px;
     font-weight: 500;
     color: var(--preto);
     margin: 1em 0;
-}
-
-.container__texto-detalhes{
+  }
+  
+  .container__texto-detalhes {
     color: var(--cinza-claro);
+  }
+  
+  /* Media queries para telas menores */
+  @media (max-width: 768px) {
+    .sobreNós-container {
+      width: 70%; /* aumentar largura em telas menores */
+      padding: 2em 0; /* ajustar padding em telas menores */
+    }
+    .container__titulo-sobreNós {
+      font-size: 36px; /* reduzir tamanho do título em telas menores */
+    }
+    .container__texto {
+      font-size: 16px; /* reduzir tamanho do texto em telas menores */
+    }
+    .container__sobreNós-detalhes {
+      width: 220px; /* reduzir largura em telas menores */
+      padding: 1.5em 1.5em; /* ajustar padding em telas menores */
+    }
+    .container__valor {
+      font-size: 40px; /* reduzir tamanho do valor em telas menores */
+    }
+    .container__titulo-detalhes {
+      font-size: 14px; /* reduzir tamanho do título em telas menores */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .sobreNós-container {
+      width: 90%; /* aumentar largura em telas muito menores */
+      padding: 1em 0; /* ajustar padding em telas muito menores */
+    }
+    .container__titulo-sobreNós {
+      font-size: 24px; /* reduzir tamanho do título em telas muito menores */
+    }
+    .container__texto {
+      font-size: 12px; /* reduzir tamanho do texto em telas muito menores */
+    }
+    .container__sobreNós-detalhes {
+      width: 180px; /* reduzir largura em telas muito menores */
+      padding: 1em 1em; /* ajustar padding em telas muito menores */
+    }
+    .container__valor {
+      font-size: 30px; /* reduzir tamanho do valor em telas muito menores */
+    }
+    .container__titulo-detalhes {
+      font-size: 12px; /* reduzir tamanho do título em telas muito menores */
+    }
+  }
+
+  /* Media query para telas de tamanho 375px */
+@media (max-width: 375px) {
+  .sobreNós-container {
+      width: 95%; /* aumentar largura em telas muito menores */
+      padding: 0.5em 0; /* ajustar padding em telas muito menores */
+  }
+  .container__titulo-sobreNós {
+      font-size: 20px; /* reduzir tamanho do título em telas muito menores */
+      padding: 0.5em 0; /* ajustar padding em telas muito menores */
+  }
+  .container__texto {
+      font-size: 12px; /* reduzir tamanho do texto em telas muito menores */
+  }
+  .container__sobreNós-detalhes {
+      width: 160px; /* reduzir largura em telas muito menores */
+      padding: 0.5em; /* ajustar padding em telas muito menores */
+      margin: 1em 0; /* ajustar margem em telas muito menores */
+  }
+  .container__valor {
+      font-size: 24px; /* reduzir tamanho do valor em telas muito menores */
+  }
+  .container__titulo-detalhes {
+      font-size: 10px; /* reduzir tamanho do título em telas muito menores */
+  }
 }
