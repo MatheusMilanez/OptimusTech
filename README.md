@@ -1,2 +1,2 @@
 # OptimusTech
-OptimusTech| 7DaysOfCode - Não está responsivo 
+OptimusTech| 7DaysOfCode  
