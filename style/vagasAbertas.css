@@ -66,6 +66,9 @@
   
   /* Media queries para telas menores */
   @media (max-width: 768px) {
+    .container__vagasAbertas {
+      margin: 1em 0; /* ajustar margem em telas muito menores */
+  }
    .container__vagasAbertas-detalhes {
       margin: 4em 0; /* ajustar margem em telas menores */
     }
@@ -99,6 +102,9 @@
   }
   
   @media (max-width: 480px) {
+    .container__vagasAbertas {
+      margin: 1em 0; /* ajustar margem em telas muito menores */
+  }
    .container__vagasAbertas-detalhes {
       margin: 2em 0; /* ajustar margem em telas muito menores */
     }
@@ -117,6 +123,9 @@
 
 /* Media query para telas de tamanho 375px */
 @media (max-width: 375px) {
+  .container__vagasAbertas {
+    margin: 1em 0; /* ajustar margem em telas muito menores */
+}
   .container__vagasAbertas-detalhes {
       margin: 1em 0; /* ajustar margem em telas muito menores */
   }
