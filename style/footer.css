@@ -47,6 +47,10 @@
   /* Media queries para telas menores */
   @media (max-width: 768px) {
    .container__footer {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
       margin-top: 3em; /* reduzir margem em telas menores */
     }
    .container__footer-titulo {
@@ -71,6 +75,10 @@
   
   @media (max-width: 480px) {
    .container__footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
       margin-top: 2em; /* reduzir margem em telas muito menores */
     }
    .container__footer-titulo {
@@ -90,6 +98,10 @@
   /* Media query para telas de tamanho 375px */
 @media (max-width: 375px) {
   .container__footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
       margin-top: 1.5em; /* reduzir margem em telas muito menores */
   }
   .container__footer-titulo {
@@ -108,6 +120,9 @@
       padding: 4px 8px; /* ajustar padding em telas muito menores */
   }
   .footer__direitosReservados {
-      margin: 0.5em 0 1.5em 0; /* ajustar margem em telas muito menores */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+      margin: 10px 0; /* ajustar margem em telas muito menores */
   }
 }
