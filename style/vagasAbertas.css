@@ -141,7 +141,7 @@
       margin-bottom: 0.5em; /* ajustar margem em telas muito menores */
   }
   .vagas__container {
-      padding: 0.5em 15em 0.5em 0.5em; /* ajustar padding em telas muito menores */
+      padding: 0.5em 5em 0.5em 0.5em; /* ajustar padding em telas muito menores */
       margin: 0.3em 0 0.3em 0; /* ajustar margem em telas muito menores */
   }
   .vagas__titulo {
